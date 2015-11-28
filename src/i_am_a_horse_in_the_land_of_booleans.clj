@@ -34,7 +34,7 @@
     ))
 
 (defn leap-year? [year]
-  (if (or (and (= 0 (mod year 4)) (not= 0 (mod year 100)))
-          (and (= 0 (mod year 4)) (= 0 (mod year 400)))) true false))
+  (or (and (= 0 (mod year 4)) (not= 0 (mod year 100)))
+      (and (= 0 (mod year 4)) (= 0 (mod year 400)))))
 
 ; '_______'
